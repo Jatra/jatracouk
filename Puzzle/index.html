@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crossword Demo</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 2rem;}
+    .crossword {display: inline-grid; gap: 1px; background:#444;}
+    .cell {
+      width: 30px; height: 30px;
+      background:#fff; position:relative;
+      text-align:center; line-height:30px;
+      font-weight:bold; font-size:14px;
+    }
+    .cell.block {background:#000;}
+    .cell .num {position:absolute; top:0; left:0; font-size:10px; line-height:10px; padding:1px;}
+	.cell input {
+	  background: transparent;
+	  outline: none;
+	}
+	.cell input:focus {
+	  box-shadow: none;
+	}
+	.cell input:focus {
+	  box-shadow: none;
+	}
+	#word-msg {
+	  transition: opacity 0.3s ease;
+	  opacity: 0;
+	}
+	#word-msg.show {
+	  opacity: 1;
+	}
+    .clues {margin-top:20px; display:flex; gap:40px;}
+    .clues h3 {margin-bottom:5px;}
+    .clues ul {list-style:none; padding:0;}
+  </style>
+</head>
+<body>
+
+<h1 id="title"></h1>
+	
+<div id="grid" class="crossword"></div>
+
+<div id="guess-panel" style="margin-top:20px;">
+  <label for="letter-guess">Guess a letter:</label>
+  <input id="letter-guess" maxlength="1" style="width:30px; text-transform:uppercase;">
+  <button id="guess-btn">Guess</button>
+  <span id="guess-msg" style="margin-left:10px; color:#555;"></span>
+</div>
+<!-- ==== WORD‑GUESS PANEL ==== -->
+<div id="word-panel" style="margin-top:15px;">
+  <label for="word-guess">Guess a word:</label>
+  <input id="word-guess" style="width:150px; text-transform:uppercase;">
+  <button id="word-btn">Guess Word</button>
+  <span id="word-msg" style="margin-left:10px; color:#555;"></span>
+</div>
+
+<div class="clues">
+  <div id="across"><h3>Across</h3><ul></ul></div>
+  <div id="down"><h3>Down</h3><ul></ul></div>
+</div>
+
+<script src="crossword.js"></script>
+</body>
+</html>

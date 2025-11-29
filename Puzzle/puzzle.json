@@ -1,0 +1,45 @@
+const puzzle = {
+  "title": "Puzzle",
+  "size": {"rows": 5, "cols": 5},
+  "cells": [
+    {"row":0,"col":0,"solution":"C","number":1,"isBlock":false,"acrossClueId":"A1","downClueId":"D1"},
+    {"row":0,"col":1,"solution":"A","number":null,"isBlock":false,"acrossClueId":"A1","downClueId":null},
+    {"row":0,"col":2,"solution":"T","number":2,"isBlock":false,"acrossClueId":"A1","downClueId":null},
+    {"row":0,"col":3,"solution":"#","number":null,"isBlock":true},
+    {"row":0,"col":4,"solution":"#","number":2,"isBlock":true,"acrossClueId":"A2","downClueId":"D2"},
+
+    {"row":1,"col":0,"solution":"O","number":null,"isBlock":false,"acrossClueId":"A1","downClueId":"D1"},
+    {"row":1,"col":1,"solution":"#","number":null,"isBlock":true,"acrossClueId":"A1","downClueId":"D3"},
+    {"row":1,"col":2,"solution":"R","number":null,"isBlock":false,"acrossClueId":"A1","downClueId":"D4"},
+    {"row":1,"col":3,"solution":"#","isBlock":true},
+    {"row":1,"col":4,"solution":"C","number":3,"isBlock":false,"acrossClueId":"A2","downClueId":"D2"},
+
+    {"row":2,"col":0,"solution":"M","number":4,"isBlock":false,"acrossClueId":"A5","downClueId":"D1"},
+    {"row":2,"col":1,"solution":"O","isBlock":false},
+    {"row":2,"col":2,"solution":"U","isBlock":false},
+    {"row":2,"col":3,"solution":"S","isBlock":false},
+    {"row":2,"col":4,"solution":"E","number":null,"isBlock":false,"acrossClueId":"A2","downClueId":"D2"},
+
+    {"row":3,"col":0,"solution":"B","isBlock":false},
+    {"row":3,"col":1,"solution":"#","isBlock":true},
+    {"row":3,"col":2,"solution":"N","isBlock":false},
+    {"row":3,"col":3,"solution":"#","isBlock":true},
+    {"row":3,"col":4,"solution":"L","number":null,"isBlock":false,"acrossClueId":"A2","downClueId":"D2"},
+
+    {"row":4,"col":0,"solution":"#","isBlock":true},
+    {"row":4,"col":1,"solution":"#","isBlock":true},
+    {"row":4,"col":2,"solution":"K","isBlock":false,"number":5},
+    {"row":4,"col":3,"solution":"I","isBlock":false},
+    {"row":4,"col":4,"solution":"T","number":null,"isBlock":false,"acrossClueId":"A2","downClueId":"D2"}
+  ],
+  "acrossClues": [
+    {"id":"A1","number":1,"text":"Feline","answerLength":3,"startCell":{"row":0,"col":0}},
+      {"id":"A2","number":4,"text":"Feline food","answerLength":5,"startCell":{"row":2,"col":0}},
+      {"id":"A3","number":5,"text":"Smart car","answerLength":3,"startCell":{"row":4,"col":2}}
+  ],
+  "downClues": [
+    {"id":"D1","number":1,"text":"Hair dresser","answerLength":4,"startCell":{"row":0,"col":0}},
+      {"id":"D2","number":2,"text":"Elephant nose","answerLength":5,"startCell":{"row":0,"col":2}},
+      {"id":"D3","number":3,"text":"Scot or Irish","answerLength":4,"startCell":{"row":1,"col":4}}
+  ]
+};
